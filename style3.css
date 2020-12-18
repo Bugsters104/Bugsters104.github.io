@@ -1,0 +1,263 @@
+#fonaVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -100;
+}
+
+#konteiners {
+    display: flex;
+    width: 1000px;
+	border-radius: 25px;
+    background-image: url("atteli/pattern.jpg");
+	margin-right: auto;
+    margin-left: auto;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+#saturaTuretajs {
+	width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 0 30px 0 30px;
+    padding: 0px;
+    overflow: hidden;
+	background-image: url("atteli/josla.jpg");
+	background-size: 200px 100px;
+}
+
+.poga {
+    background: linear-gradient(to bottom right, #e60000, #b30000);
+    color: white;
+	font-family:Comic Sans MS;
+    font-size: 25px;
+    padding: 16px 32px 16px 32px;
+	margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    float: left;
+	width: auto;
+}
+
+#pogaActive {
+    background: linear-gradient(#f4d442, #f9eb4d);
+    color: white;
+	font-family:Comic Sans MS;
+    font-size: 25px;
+    padding: 16px 32px 16px 32px;
+	margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    float: left;
+	width: auto;
+}
+
+.poga:hover, #pogaActive:hover {
+    background: linear-gradient(to bottom right, #b30000, #e60000);
+}
+
+#iepirkumuRati{
+	width: 40px;
+	height: 40px;
+	position: relative;
+    left: 270px;
+	top: 10px;
+}
+
+#precuSkaits{
+	color: White;
+	font-size: 22px;
+	position: relative;
+    left: 267px;
+	top: -15px;
+}
+
+aside {
+	float: left;
+	width: 20%;
+	background: White;
+	border-radius: 10px;
+	display: block;
+	margin: 5px auto 20px 20px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#kategorija, #saturs{
+    text-align: center;
+	font-family:Impact; 
+	text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+	font-size:140%;
+}
+
+/*Style the buttons inside the tab*/
+.sanuPogas {
+    display: block;
+    background-color: #f2f5f3;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+	font-family: Comic Sans MS;
+	margin-bottom: 5px;
+}
+
+/*Create an active/current "tab button" class*/
+.sanuPogas.active {
+    background-color: #ccc;
+	color: #faf74d;
+}
+
+section{
+	float: right;
+	width: 75%;
+	background: White;
+	border-radius: 10px;
+	display: block;
+	margin: 5px 15px 20px auto;
+	text-align: center;
+}
+
+#progresaKonteiners{
+	border-radius: 0px 0px 4px 4px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	height: 8px;
+}
+
+#skrullis{
+	border-radius: 0px 0px 4px 4px;
+	height: 8px;
+	background: #f44e42;
+	width: 0%;
+}
+
+#sale{
+	width: 30%;
+	float: right;
+	margin: 10px;
+}	
+
+/*Style the tab content*/
+#tKrekli, #dzemperi {
+    display: none;
+}
+
+.skrullejams{
+    height: 300px;
+    overflow-y: auto;
+}
+
+.kartina {
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px; 
+  float:left;
+}
+
+.kartinasSaturs {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.kartina:hover .kartinasSaturs {
+  transform: rotateY(180deg);
+}
+
+.kartinasPrieksa, .kartinasAizmugure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.kartinasAizmugure {
+  background-color: #f5ec42;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+#preces{
+	width:150px;
+	height:150px;
+}
+
+.cena {
+  color: White;
+  font-size: 20px;
+}
+
+.pirktPoga {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #f5ce42;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.pirktPoga:hover {
+	color: black;
+	background-color: white;
+}
+
+#zinojums{
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    transition: opacity 0.6s;
+    margin-bottom: 10px;
+	display: none;
+}
+
+.aizvert{
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.aizvert:hover {
+    color: black;
+}
+
+#apaksa{
+	font-family:Impact; 
+	color: white; 
+	font-size:90%;
+	margin-bottom: -10px;
+	text-align: center;
+}

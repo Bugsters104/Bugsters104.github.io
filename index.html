@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Getting Up</title>
+	<link rel="shortcut icon" type="image/x-icon" href="atteli/ikona.png" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<div id="konteiners">
+  <div id="saturaTuretajs">
+	<nav>
+	<ul>
+	  <li><a id="pogaActive" href="#">Sākums</a></li>
+	  <li><a class="poga" href="izstrade.html">Grafiti</a></li>
+	  <li><a class="poga" href="izstrade.html">LV HipHop</a></li>
+	  <li><a class="poga" href="veikals.html">Veikals</a></li>
+	</ul>
+	</nav>
+
+	<aside>
+	  <p id="stickers">Stickers</p>
+	  <div id="tooltip">
+		<input onchange="paraditUzlimes()" type="range" min="0" max="1" value="0" step="1" />
+		<span id="tooltiptext">Pabīdi sviru!</span>
+	  </div>
+	  
+		<div id="uzlimes">
+			<img id="s1" src="atteli/s1.png"/>
+			<img id="s2" src="atteli/s2.png"/>
+			<img id="s3" src="atteli/s3.png"/>
+			<img id="s4" src="atteli/s4.png"/>
+			<img id="s5" src="atteli/s5.png"/>
+			<img id="s6" src="atteli/s6.png"/>
+			<img id="s7" src="atteli/s7.png"/>
+			<img id="s8" src="atteli/s8.png"/>
+			<img id="s9" src="atteli/s9.png"/>
+			<img id="s10" src="atteli/s10.png"/>
+		</div>
+	</aside>
+
+	<section>
+	<div id="progresaKonteiners">
+		<div id="skrullis"></div>
+	</div>	
+		<p id="saturs">Artists</p>
+		
+		<div id="bidams">
+			<img id="x" src="atteli/x.png"/>
+		</div>	
+		
+		<p class="apraksts">
+		<img name="ecko" id="ecko" src="atteli/attels1.png" onMouseOver="document.ecko.src=attelsB.src;" onMouseOut="document.ecko.src=attelsA.src;"/>
+		Trane, aka Coltrane Crowley, is the main character of Getting Up: 
+		Contents Under Pressure and is voiced by prominent Hip hop artist Talib Kweli. 
+		He begins the game as a self-centered amateur in the New Radius graffiti community, 
+		but as he progresses through the game he becomes swept up in the struggle against the 
+		corrupt Mayor Sung and his personal police force, the CCK.
+		</p>
+		
+		<p class="apraksts">
+		<img id="mike" src="atteli/mike.png"/>
+		"White" Mike Saunders is a big albino who has a bad run-in with Trane 
+		early in the game. Later on, he joins Trane's Still Free Crew because of 
+		his mutual relationship with Kry-1, another member.
+		</p>
+		
+		<p class="apraksts">
+		<img id="gabe" src="atteli/gabe.png"/>
+		Gabe is The Leader of the VANR crew in New radius. 
+		He gets into a rivalry with Trane, then join him to combat 
+		the CCK and the mayor.
+		</p>
+	</section>
+  </div>
+</div>
+
+<footer>
+		<p id="apaksa">Autortiesības pieder &copy; John Doe</p>
+</footer>
+<script src="skripts.js"></script>
+</body>
+</html>

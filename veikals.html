@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Veikals</title>
+	<link rel="shortcut icon" type="image/x-icon" href="atteli/ikona.png" />
+	<link rel="stylesheet" type="text/css" href="style3.css" />
+</head>
+
+<body>
+<video autoplay muted loop id="fonaVideo">
+  <source src="video.mp4" type="video/mp4">
+  Tavs tīmekļa pārlūks neatbalsta HTML5 video!
+</video>
+
+<div id="konteiners">
+  <div id="saturaTuretajs">
+	<nav>
+	<ul>
+	  <li><a class="poga" href="index.html">Sākums</a></li>
+	  <li><a class="poga" href="#">Grafiti</a></li>
+	  <li><a class="poga" href="izstrade.html">LV HipHop</a></li>
+	  <li><a id="pogaActive" href="#">Veikals</a></li>
+	  <img id="iepirkumuRati" src="atteli/tuksiRati.png">
+	  <label id="precuSkaits">0</label>
+	</ul>
+	</nav>
+
+	<aside>
+		<p id="kategorija">Kategorija</p>
+		<button class="sanuPogas" onmouseover="paraditKategoriju(event, 'tKrekli')">T-Krekli</button>
+		<button class="sanuPogas" onmouseover="paraditKategoriju(event, 'dzemperi')">Džemperi</button>
+	</aside>
+
+	<section>
+	<div id="progresaKonteiners">
+		<div id="skrullis"></div>
+	</div>
+		<div id="noklusejums">
+		<p id="saturs">-50% visām precēm</p>
+		<img id="sale" src="atteli/sale.png" />
+		</div>
+		
+		<div id="tKrekli" class="tabSaturs">
+		<p id="saturs">T-Krekli</p>
+		<div class="skrullejams">		
+		
+		<!--T-kreklu kartiņs-->
+		<div class="kartina">
+			<div class="kartinasSaturs">
+				<div class="kartinasPrieksa">
+					<img id="preces" src="atteli/tk1.jpg">
+				</div>
+								
+				<div class="kartinasAizmugure">
+				<h1>Dope</h1> 
+				<p class="cena">11.99€</p>
+				<p><button onclick="ieliktGroza()" class="pirktPoga">Ielikt grozā</button></p>				
+				</div>
+			</div>
+		</div>
+		
+		<div class="kartina">
+			<div class="kartinasSaturs">
+				<div class="kartinasPrieksa">
+					<img id="preces" src="atteli/tk2.jpg">
+				</div>
+				
+				<div class="kartinasAizmugure">
+				<h1>Wu-Tang</h1> 
+				<p class="cena">14.99€</p>
+				<p><button onclick="ieliktGroza()" class="pirktPoga">Ielikt grozā</button></p>				
+				</div>
+			</div>
+		</div>
+		
+		<div class="kartina">
+			<div class="kartinasSaturs">
+				<div class="kartinasPrieksa">
+					<img id="preces" src="atteli/tk3.jpg">
+				</div>
+				
+				<div class="kartinasAizmugure">
+				<h1>The Legend</h1> 
+				<p class="cena">13.69€</p>
+				<p><button onclick="ieliktGroza()" class="pirktPoga">Ielikt grozā</button></p>				
+				</div>
+			</div>
+		</div>
+		
+		<div class="kartina">
+			<div class="kartinasSaturs">
+				<div class="kartinasPrieksa">
+					<img id="preces" src="atteli/tk4.jpg">
+				</div>
+				
+				<div class="kartinasAizmugure">
+				<h1>Cards</h1> 
+				<p class="cena">21.99€</p>
+				<p><button onclick="ieliktGroza()" class="pirktPoga">Ielikt grozā</button></p>				
+				</div>
+			</div>
+		</div>
+		
+		<div class="kartina">
+			<div class="kartinasSaturs">
+				<div class="kartinasPrieksa">
+					<img id="preces" src="atteli/tk5.jpg">
+				</div>
+				
+				<div class="kartinasAizmugure">
+				<h1>Flower</h1> 
+				<p class="cena">9.99€</p>
+				<p><button onclick="ieliktGroza()" class="pirktPoga">Ielikt grozā</button></p>				
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+
+		<div id="dzemperi" class="tabSaturs">
+		<p id="saturs">Džemperi</p>
+		<div class="skrullejams">		
+		
+		<!--Džemperu kartiņs-->
+		<div class="kartina">
+			<div class="kartinasSaturs">
+				<div class="kartinasPrieksa">
+					<img id="preces" src="atteli/dz1.jpg">
+				</div>
+								
+				<div class="kartinasAizmugure">
+				<h1>Stila kurjers</h1> 
+				<p class="cena">54.86€</p>
+				<p><button onclick="ieliktGroza()" class="pirktPoga">Ielikt grozā</button></p>				
+				</div>
+			</div>
+		</div>
+		
+		<div class="kartina">
+			<div class="kartinasSaturs">
+				<div class="kartinasPrieksa">
+					<img id="preces" src="atteli/dz2.jpg">
+				</div>
+				
+				<div class="kartinasAizmugure">
+				<h1>Lion King</h1> 
+				<p class="cena">24.19€</p>
+				<p><button onclick="ieliktGroza()" class="pirktPoga">Ielikt grozā</button></p>				
+				</div>
+			</div>
+		</div>
+		
+		<div class="kartina">
+			<div class="kartinasSaturs">
+				<div class="kartinasPrieksa">
+					<img id="preces" src="atteli/dz3.jpg">
+				</div>
+				
+				<div class="kartinasAizmugure">
+				<h1>Ecko</h1> 
+				<p class="cena">44.68€</p>
+				<p><button onclick="ieliktGroza()" class="pirktPoga">Ielikt grozā</button></p>				
+				</div>
+			</div>
+		</div>
+		
+		<div class="kartina">
+			<div class="kartinasSaturs">
+				<div class="kartinasPrieksa">
+					<img id="preces" src="atteli/dz4.jpg">
+				</div>
+				
+				<div class="kartinasAizmugure">
+				<h1>Brooklyn</h1> 
+				<p class="cena">24.99€</p>
+				<p><button onclick="ieliktGroza()" class="pirktPoga">Ielikt grozā</button></p>				
+				</div>
+			</div>
+		</div>
+		
+		<div class="kartina">
+			<div class="kartinasSaturs">
+				<div class="kartinasPrieksa">
+					<img id="preces" src="atteli/dz5.jpg">
+				</div>
+				
+				<div class="kartinasAizmugure">
+				<h1>Rhino</h1> 
+				<p class="cena">66.99€</p>
+				<p><button onclick="ieliktGroza()" class="pirktPoga">Ielikt grozā</button></p>				
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+		<div id="zinojums">
+				<span class="aizvert" onclick="pasleptBridinajumu()">&times;</span>  
+				<strong>Prece pievienota grozam!</strong>
+		</div>
+	</section>
+  </div>
+</div>
+
+<footer>
+		<p id="apaksa">Autortiesības pieder &copy; John Doe</p>
+</footer>
+<script src="skripts3.js"></script>
+</body>
+</html>
